@@ -12,6 +12,11 @@ def rescale(frame,scale=0.75):
 
 image_resized=rescale(img,0.2)
 cv.imshow('resized image',image_resized)
+#only live video (computer camera etc)
+def changeres(width,height):
+    capture.set(3,width)
+    capture.set(4,height)
+
 
 capture=cv.VideoCapture('videos/video.mp4')
 
